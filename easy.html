@@ -1145,9 +1145,7 @@ body{
         let intervalId = setInterval(function() {
           sprite.style.left = sprite.offsetLeft + 2 + "px";
         }, 16);
-        
-        leftButton.addEventListener("click", function() {
-          clearInterval(intervalId);
+    
         });
       });
       
@@ -1157,8 +1155,7 @@ body{
           sprite.style.left = sprite.offsetLeft - 2 + "px";
         }, 16);
         
-        rightButton.addEventListener("click", function() {
-          clearInterval(intervalId);
+        
         });
       });
       
