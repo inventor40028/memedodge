@@ -1141,23 +1141,23 @@ body{
     const jumpButton = document.getElementById("jb");
     const downButton = document.getElementById("db");
     
-    leftButton.addEventListener("mousedown", function() {
+    leftButton.addEventListener("click", function() {
         let intervalId = setInterval(function() {
           sprite.style.left = sprite.offsetLeft + 2 + "px";
         }, 16);
         
-        leftButton.addEventListener("mouseup", function() {
+        leftButton.addEventListener("click", function() {
           clearInterval(intervalId);
         });
       });
       
     
-      rightButton.addEventListener("mousedown", function() {
+      rightButton.addEventListener("click", function() {
         let intervalId = setInterval(function() {
           sprite.style.left = sprite.offsetLeft - 2 + "px";
         }, 16);
         
-        rightButton.addEventListener("mouseup", function() {
+        rightButton.addEventListener("click", function() {
           clearInterval(intervalId);
         });
       });
