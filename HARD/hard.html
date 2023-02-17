@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<title>
+    doogie dogger
+</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+</head>
+<style>
+  @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+body{
+    text-align: center;
+    background: url(https://od.lk/s/NTVfMjQ5NjEzODlf/bg.jpg);
+    overflow: hidden;
+}
+
+#start {
+    font-size: 50px;
+     background: linear-gradient(220deg, lightblue, blue);
+     color: white;
+     cursor: pointer;
+    font: bold;
+    border: 0px;
+    border-radius: 50px;
+    padding: 5%;
+    padding-top: 0%;
+    box-shadow: 10px 10px 10px blueviolet ;
+    font-family: 'Minecraft', sans-serif; 
+    margin: 2%;                                         
+}
+
+
+
+#start:hover{
+    background: linear-gradient( -221deg, blue, lightblue);
+    font-size: larger;
+
+}
+
+
+
+
+
+#gameover {
+  font-size: 90px;
+  font-family: 'Minecraft', sans-serif;
+  color: red;
+  display: none;
+  background-size: cover;
+}
+
+#timer {
+  font-size: 40px;
+  font-family: 'Minecraft', sans-serif;
+  color: whitesmoke;
+  display: none;
+  background-size: cover;
+}
+
+
+
+.sprite {
+    
+  background-image: url('https://od.lk/s/NTVfMjQ5NjEzODFf/sprite.png');
+  width: 43px;
+  height: 43px; 
+  position: absolute;
+  top: 80%;
+  left: 50%;
+ 
+}
+
+
+
+
+.emoji{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 430px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODdf/https://od.lk/s/NTVfMjQ5NjEzODJf/emoji4.ico");
+    background-size: cover;
+    position: absolute;
+}
+
+.emoji{
+        animation: EmojiMoves 2s linear infinite;
+    }
+
+@keyframes EmojiMoves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+.emoji2{
+    width: 45px;
+    height: 45px;
+    top: 0;
+    left: 40px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODNf/emoji.png");
+    background-size: cover;
+    position: absolute;
+}
+
+.emoji2{
+        animation: Emoji2Moves 4s linear infinite;
+    }
+
+@keyframes Emoji2Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+.emoji3{
+   width: 30px;
+    height: 30px;
+    top: 0;
+    left: 140px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+    
+}
+
+.emoji3{
+        animation: Emoji3Moves 1.3s linear infinite;
+    }
+
+@keyframes Emoji3Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+.emoji4{
+   width: 30px;
+    height: 30px;
+    top: 0;
+    left: 210px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODZf/emohi.ico");
+    background-size: cover;
+    position: absolute;
+    
+}
+
+.emoji4{
+        animation: Emoji4Moves 2.9s linear infinite;
+    }
+
+@keyframes Emoji4Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+.emoji5{
+   width: 30px;
+    height: 30px;
+    top: 0;
+    left: 280px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODVf/https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+    
+}
+
+.emoji5{
+        animation: Emoji5Moves 2.4s linear infinite;
+    }
+
+@keyframes Emoji5Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+.emoji6{
+   width: 30px;
+    height: 30px;
+    top: 0;
+    left: 280px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODVf/https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+    
+}
+
+.emoji6 {
+  animation: Emoji6Moves 3s linear infinite;
+}
+
+@keyframes Emoji6Moves {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+
+
+
+
+
+
+.emoji7{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 40px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODRf/https://od.lk/s/NTVfMjQ5NjEzODNf/emoji.png");
+    background-size: cover;
+    position: absolute;
+}
+
+.emoji7{
+        animation: Emoji7Moves 2.6s linear infinite;
+    }
+
+@keyframes Emoji7Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji8{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 140px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+    }
+
+    .emoji8{
+        animation: Emoji8Moves 2s linear infinite;
+    }
+
+@keyframes Emoji8Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji9{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 210px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+    }
+
+    .emoji9{
+        animation: Emoji9Moves 3s linear infinite;
+    }
+
+@keyframes Emoji9Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji10{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 280px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+    }
+
+    .emoji10{
+        animation: Emoji10Moves 1s linear infinite;
+    }
+
+@keyframes Emoji10Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji11{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 350px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji11{
+        animation: Emoji11Moves 1.5s linear infinite;
+    }
+
+@keyframes Emoji11Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji12{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 430px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+}
+.emoji12{
+        animation: Emoji12Moves 2.5s linear infinite;
+    }
+
+@keyframes Emoji12Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji13{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 490px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODNf/emoji.png");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji13{
+        animation: Emoji13Moves 0.8s linear infinite;
+    }
+
+@keyframes Emoji13Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji14{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 560px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji14{
+        animation: Emoji14Moves 2.6s linear infinite;
+    }
+
+@keyframes Emoji14Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji15{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 630px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/emoji4.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+
+    .emoji15{
+        animation: Emoji2Moves 4.3s linear infinite;
+    }
+
+@keyframes Emoji15Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji16{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 490px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/emoji4.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji16{
+        animation: Emoji16Moves 2.4s linear infinite;
+    }
+
+@keyframes Emoji16Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji17{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 700px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODNf/emoji.png");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji17{
+        animation: Emoji17Moves 6s linear infinite;
+    }
+
+@keyframes Emoji17Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji18{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 770px;
+    background: url("emohi.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji18{
+        animation: Emoji18Moves 6s linear infinite;
+    }
+
+@keyframes Emoji18Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji19{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 840px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji19{
+        animation: Emoji19Moves 20s linear infinite;
+    }
+
+@keyframes Emoji19Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji20{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 910px;
+    background: url("devil.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji20{
+        animation: Emoji20Moves 5s linear infinite;
+    }
+
+@keyframes Emoji20Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji21{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 980px;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji21{
+        animation: Emoji21Moves 8s linear infinite;
+    }
+
+@keyframes Emoji21Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji22{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 1050px;
+    background: url("emohi.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji22{
+        animation: Emoji22Moves 6s linear infinite;
+    }
+
+@keyframes Emoji22Moves {
+    0%{
+        top: 0%;
+    }
+100%{
+    top: 100%;
+}
+}
+
+    .emoji23{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 90.8%;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/https://od.lk/s/NTVfMjQ5NjEzODhf/emoji3.ico");
+    background-size: cover;
+    position: absolute;
+
+    }
+    .emoji23{
+        animation: Emoji23Moves 3s linear infinite;
+    }
+
+@keyframes Emoji23Moves {
+    0%{
+        top: 0px;
+    }
+100%{
+    top: 900px;
+}
+}
+
+
+
+
+
+.emoji24{
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 95%;
+    background: url("https://od.lk/s/NTVfMjQ5NjEzODJf/emoji4.ico");
+    background-size: cover;
+    position: absolute;
+}
+
+
+.emoji24{
+        animation: Emoji24Moves 5.3s linear infinite;
+    }
+
+   
+@keyframes Emoji24Moves{
+   0% {
+    top: 0%;
+   }
+   100%{
+    top: 100%;
+   }
+}
+    
+.lb {
+  font-size: 50px;
+  position: absolute;
+  left: 0%;
+  bottom: 20%;
+  opacity: 0.1;
+  background-size: cover;
+}
+
+.rb {
+  font-size: 50px;
+  position: absolute;
+  right: 0%;
+  bottom: 20%;
+  opacity: 0.1;
+  background-size: cover;
+}
+
+.jb {
+  font-size: 50px;
+  position: absolute;
+  right: 0%;
+  bottom: 70%;
+  opacity: 0.1;
+  background-size: cover;
+}
+
+.db {
+  font-size: 50px;
+  position: absolute;
+  left: 0%;
+  bottom: 70%;
+  opacity: 0.1;
+  background-size: cover;
+}
+
+
+.sb {
+  font-size: 30px;
+  position: absolute;
+  left: 0%;
+  bottom: 95%;
+  opacity: 0.7;
+  background-size: cover;
+}
+
+
+
+</style>
+
+        
+        <div id="sprite" class="sprite"></div>
+        <button id="lb" class="lb"><i class="fas fa-arrow-right"></i>
+
+        </button>
+<button id="rb" class="rb"><i class="fas fa-arrow-left"></i>
+</button>
+<button id="jb" class="jb">Jump</button>
+<button id="db" class="db">Down</button>
+<button id="sb" class="sb"><i class="fas fa-music"></i>
+</button>
+
+
+        <div id="emoji"></div>
+        <div id="emoji2"></div>
+        <div id="emoji3"></div>
+        <div id="emoji4"></div>
+        <div id="emoji5"></div>
+        <div id="emoji6"></div>
+        <div id="emoji7"></div>
+        <div id="emoji8"></div>
+        <div id="emoji9"></div>
+        <div id="emoji10"></div>
+        <div id="emoji11"></div>
+        <div id="emoji12"></div>
+        <div id="emoji13"></div>
+        <div id="emoji14"></div>
+        <div id="emoji15"></div>
+        <div id="emoji16"></div>
+        <div id="emoji17"></div>
+        <div id="emoji18"></div>
+        <div id="emoji19"></div>
+        <div id="emoji20"></div>
+        <div id="emoji21"></div>
+        <div id="emoji22"></div>
+        <div id="emoji23"></div>
+        <div id="emoji24"></div>
+        <button id="start" onclick="start()">START</button>
+        <h1 id="gameover">GAME OVER!</h1>
+        <div id="timer"></div>
+       
+          
+          
+          
+
+       
+
+        
+
+<script> 
+
+    function start() {
+        document.getElementById("start").style.display = "none";
+    
+    
+        
+        
+         var sprite = document.getElementById("sprite");
+         var emoji = document.getElementById("emoji");
+         var emoji2 = document.getElementById("emoji2");
+         var emoji3 = document.getElementById("emoji3");
+         var emoji4 = document.getElementById("emoji4");
+         var emoji5 = document.getElementById("emoji5");
+         var emoji6 = document.getElementById("emoji6");
+         var emoji7 = document.getElementById("emoji7");
+         var emoji8 = document.getElementById("emoji8");
+         var emoji9 = document.getElementById("emoji9");
+         var emoji10 = document.getElementById("emoji10");
+         var emoji11 = document.getElementById("emoji11");
+         var emoji12 = document.getElementById("emoji12");
+         var emoji13 = document.getElementById("emoji13");
+         var emoji14 = document.getElementById("emoji14");
+         var emoji15 = document.getElementById("emoji15");
+         var emoji16 = document.getElementById("emoji16");
+         var emoji17 = document.getElementById("emoji17");
+         var emoji17 = document.getElementById("emoji18");
+         var emoji19 = document.getElementById("emoji19");
+         var emoji20 = document.getElementById("emoji20");
+         var emoji21 = document.getElementById("emoji21");
+         var emoji22 = document.getElementById("emoji22");
+         var emoji23 = document.getElementById("emoji23");
+         var emoji24 = document.getElementById("emoji24");
+         var gameover = false;
+         var timerLabel = document.getElementById("timer");
+      timerLabel.style.display = "initial";
+      var timer = 0;
+      var timerId = setInterval(function() {
+        timer++;
+        timerLabel.innerHTML = "Score: " + timer + "s";
+      }, 6000);
+    
+         emoji.classList.add("emoji");
+         emoji2.classList.add("emoji2");
+         emoji3.classList.add("emoji3");
+         emoji4.classList.add("emoji4");
+         emoji5.classList.add("emoji5");
+         emoji6.classList.add("emoji6");
+         emoji7.classList.add("emoji7");
+         emoji8.classList.add("emoji8");
+         emoji9.classList.add("emoji9");
+         emoji10.classList.add("emoji10");
+         emoji11.classList.add("emoji11");
+         emoji12.classList.add("emoji12");
+         emoji13.classList.add("emoji13");
+         emoji14.classList.add("emoji14");
+         emoji15.classList.add("emoji15");
+         emoji16.classList.add("emoji16");
+         emoji17.classList.add("emoji17");
+         emoji18.classList.add("emoji18");
+         emoji19.classList.add("emoji19");
+         emoji20.classList.add("emoji20");
+         emoji21.classList.add("emoji21");
+         emoji22.classList.add("emoji22");
+         emoji23.classList.add("emoji23");
+         emoji24.classList.add("emoji24");
+    
+    
+         
+    
+         document.onkeydown = function(e) {
+          let left = parseInt(window.getComputedStyle(sprite).getPropertyValue('left'));
+          let keyPressed = e.keyCode;
+          
+          if (keyPressed === 37) {
+            if (left > 0) {
+              sprite.style.left = (left - 10) + 'px';
+            }
+          } else if (keyPressed === 39) {
+            if (left < (window.innerWidth - 40)) {
+              sprite.style.left = (left + 10) + 'px';
+            }
+          }
+    
+          
+          
+          
+        }
+        
+    
+    
+    
+    
+    
+    emoji.addEventListener("animationiteration", () => {
+       randomNumber = Math.floor(Math.random() * 9);
+       emojiLeft = randomNumber * 100;
+       emoji.style.left = emojiLeft + "px";
+    })
+    
+    
+    emoji2.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 6);
+      emoji2Left = randomNumber * 100;
+      emoji2.style.left = emoji2Left + "px";
+    })
+    
+    emoji3.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 2);
+      emoji3Left = randomNumber * 100;
+      emoji3.style.left = emoji3Left + "px";
+    })
+    
+    emoji4.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 7);
+      emoji4Left = randomNumber * 100;
+      emoji4.style.left = emoji4Left + "px";
+    })
+    
+    emoji5.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 9);
+      emoji5Left = randomNumber * 100;
+      emoji5.style.left = emoji5Left + "px";
+    })
+    
+    emoji20.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 3);
+      emoji20Left = randomNumber * 100;
+      emoji20.style.left = emoji20Left + "px";
+    })
+    
+    emoji16.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 3);
+      emoji16Left = randomNumber * 100;
+      emoji16.style.left = emoji16Left + "px";
+    })
+    
+    emoji11.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 9);
+      emoji11Left = randomNumber * 100;
+      emoji11.style.left = emoji11Left + "px";
+    })
+    
+    emoji24.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 3);
+      emoji24Left = randomNumber * 100;
+      emoji24.style.left = emoji24Left + "px";
+    })
+    
+    emoji9.addEventListener("animationiteration", () => {
+      randomNumber = Math.floor(Math.random() * 3);
+      emoji9Left = randomNumber * 100;
+      emoji9.style.left = emoji9Left + "px";
+    })
+    
+    setInterval(() => {
+      spriteRect = sprite.getBoundingClientRect();
+      emojiRect = emoji.getBoundingClientRect();
+      emoji2Rect = emoji2.getBoundingClientRect();
+      emoji3Rect = emoji3.getBoundingClientRect();
+      emoji4Rect = emoji4.getBoundingClientRect();
+      emoji5Rect = emoji5.getBoundingClientRect();
+      emoji6Rect = emoji6.getBoundingClientRect();
+      emoji7Rect = emoji7.getBoundingClientRect();
+      emoji8Rect = emoji8.getBoundingClientRect();
+      emoji9Rect = emoji9.getBoundingClientRect();
+      emoji10Rect = emoji10.getBoundingClientRect();
+      emoji11Rect = emoji11.getBoundingClientRect();
+      emoji12Rect = emoji12.getBoundingClientRect();
+      emoji13Rect = emoji13.getBoundingClientRect();
+      emoji14Rect = emoji14.getBoundingClientRect();
+      emoji15Rect = emoji15.getBoundingClientRect();
+      emoji16Rect = emoji16.getBoundingClientRect();
+      emoji17Rect = emoji17.getBoundingClientRect();
+      emoji18Rect = emoji18.getBoundingClientRect();
+      emoji19Rect = emoji19.getBoundingClientRect();
+      emoji20Rect = emoji20.getBoundingClientRect();
+      emoji21Rect = emoji21.getBoundingClientRect();
+      emoji22Rect = emoji22.getBoundingClientRect();
+      emoji24Rect = emoji24.getBoundingClientRect();
+      emoji23Rect = emoji24.getBoundingClientRect();
+    
+      
+    
+      
+      if (checkCollision(spriteRect, emojiRect)) {
+        gameover = true;
+     
+      }
+      if (gameover) {
+        clearInterval(timerId);
+        
+      }
+    
+    function checkCollision(rect1, rect2) {
+      return !(
+        rect1.right < rect2.left ||
+        rect1.left > rect2.right ||
+        rect1.bottom < rect2.top ||
+        rect1.top > rect2.bottom
+      );
+    }
+    
+      if (spriteRect.left + spriteRect.width >= emojiRect.left &&
+          spriteRect.left <= emojiRect.left + emojiRect.width &&
+          spriteRect.top + spriteRect.height >= emojiRect.top &&
+          spriteRect.top <= emojiRect.top + emojiRect.height ||
+    
+          spriteRect.left + spriteRect.width >= emoji2Rect.left &&
+          spriteRect.left <= emoji2Rect.left + emoji2Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji2Rect.top &&
+          spriteRect.top <= emoji2Rect.top + emoji2Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji3Rect.left &&
+          spriteRect.left <= emoji3Rect.left + emoji3Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji3Rect.top &&
+          spriteRect.top <= emoji3Rect.top + emoji3Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji4Rect.left &&
+          spriteRect.left <= emoji4Rect.left + emoji4Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji4Rect.top &&
+          spriteRect.top <= emoji4Rect.top + emoji4Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji5Rect.left &&
+          spriteRect.left <= emoji5Rect.left + emoji5Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji5Rect.top &&
+          spriteRect.top <= emoji5Rect.top + emoji5Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji6Rect.left &&
+          spriteRect.left <= emoji6Rect.left + emoji6Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji6Rect.top &&
+          spriteRect.top <= emoji6Rect.top + emoji6Rect.height  ||
+          
+          spriteRect.left + spriteRect.width >= emoji7Rect.left &&
+          spriteRect.left <= emoji7Rect.left + emoji7Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji7Rect.top &&
+          spriteRect.top <= emoji7Rect.top + emoji7Rect.height || 
+          
+          spriteRect.left + spriteRect.width >= emoji8Rect.left &&
+          spriteRect.left <= emoji8Rect.left + emoji8Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji8Rect.top &&
+          spriteRect.top <= emoji8Rect.top + emoji8Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji9Rect.left &&
+          spriteRect.left <= emoji9Rect.left + emoji9Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji9Rect.top &&
+          spriteRect.top <= emoji9Rect.top + emoji9Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji11Rect.left &&
+          spriteRect.left <= emoji11Rect.left + emoji11Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji11Rect.top &&
+          spriteRect.top <= emoji11Rect.top + emoji11Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji12Rect.left &&
+          spriteRect.left <= emoji12Rect.left + emoji12Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji12Rect.top &&
+          spriteRect.top <= emoji12Rect.top + emoji12Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji13Rect.left &&
+          spriteRect.left <= emoji13Rect.left + emoji13Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji13Rect.top &&
+          spriteRect.top <= emoji13Rect.top + emoji13Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji14Rect.left &&
+          spriteRect.left <= emoji14Rect.left + emoji14Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji14Rect.top &&
+          spriteRect.top <= emoji14Rect.top + emoji14Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji15Rect.left &&
+          spriteRect.left <= emoji15Rect.left + emoji15Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji15Rect.top &&
+          spriteRect.top <= emoji15Rect.top + emoji15Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji16Rect.left &&
+          spriteRect.left <= emoji16Rect.left + emoji16Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji16Rect.top &&
+          spriteRect.top <= emoji16Rect.top + emoji16Rect.height || 
+          
+          spriteRect.left + spriteRect.width >= emoji17Rect.left &&
+          spriteRect.left <= emoji17Rect.left + emoji17Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji17Rect.top &&
+          spriteRect.top <= emoji17Rect.top + emoji17Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji18Rect.left &&
+          spriteRect.left <= emoji18Rect.left + emoji18Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji18Rect.top &&
+          spriteRect.top <= emoji18Rect.top + emoji18Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji19Rect.left &&
+          spriteRect.left <= emoji19Rect.left + emoji19Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji19Rect.top &&
+          spriteRect.top <= emoji19Rect.top + emoji19Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji20Rect.left &&
+          spriteRect.left <= emoji20Rect.left + emoji20Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji20Rect.top &&
+          spriteRect.top <= emoji20Rect.top + emoji20Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji21Rect.left &&
+          spriteRect.left <= emoj21iRect.left + emoji21Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji21Rect.top &&
+          spriteRect.top <= emoji21Rect.top + emoji21Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji22Rect.left &&
+          spriteRect.left <= emoji22Rect.left + emoji22Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji22Rect.top &&
+          spriteRect.top <= emoji22Rect.top + emoji22Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji10Rect.left &&
+          spriteRect.left <= emoji10Rect.left + emoji10Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji10Rect.top &&
+          spriteRect.top <= emoji10Rect.top + emoji10Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji24Rect.left &&
+          spriteRect.left <= emoji24Rect.left + emoji24Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji24Rect.top &&
+          spriteRect.top <= emoji24Rect.top + emoji24Rect.height ||
+          
+          spriteRect.left + spriteRect.width >= emoji23Rect.left &&
+          spriteRect.left <= emoji23Rect.left + emoji23Rect.width &&
+          spriteRect.top + spriteRect.height >= emoji23Rect.top &&
+          spriteRect.top <= emoji23Rect.top + emoji23Rect.height  ){
+    
+    
+           
+           
+          
+    
+              gameover = true;
+    document.getElementById("gameover").style.display = "initial";
+    setTimeout(function() {
+      location.reload();
+    }, 5000);
+    
+        emoji.classList.remove("emoji");
+        emoji2.classList.remove("emoji2");
+        emoji3.classList.remove("emoji3");
+        emoji4.classList.remove("emoji4");
+        emoji5.classList.remove("emoji5");
+        emoji6.classList.remove("emoji6");
+        emoji7.classList.remove("emoji7");
+        emoji8.classList.remove("emoji8");
+        emoji9.classList.remove("emoji9");
+        emoji10.classList.remove("emoji10");
+        emoji11.classList.remove("emoji11");
+        emoji12.classList.remove("emoji12");
+        emoji13.classList.remove("emoji13");
+        emoji14.classList.remove("emoji14");
+        emoji15.classList.remove("emoji15");
+        emoji16.classList.remove("emoji16");
+        emoji17.classList.remove("emoji17");
+        emoji18.classList.remove("emoji18");
+        emoji19.classList.remove("emoji19");
+        emoji20.classList.remove("emoji20");
+        emoji21.classList.remove("emoji21");
+        emoji22.classList.remove("emoji22");
+        emoji23.classList.remove("emoji23");
+        emoji24.classList.remove("emoji24");
+    
+    
+        
+    
+          }
+        
+       
+         
+    
+    
+    
+        
+        
+        
+      }, 1000);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    const sprite = document.getElementById("sprite");
+const leftButton = document.getElementById("lb");
+const rightButton = document.getElementById("rb");
+const jumpButton = document.getElementById("jb");
+const downButton = document.getElementById("db");
+
+let jumpIntervalId, downIntervalId;
+
+leftButton.addEventListener("touchstart", function() {
+  let intervalId = setInterval(function() {
+    sprite.style.left = sprite.offsetLeft + 2 + "px";
+  }, 16);
+
+  leftButton.addEventListener("touchend", function() {
+    clearInterval(intervalId);
+  });
+});
+
+rightButton.addEventListener("touchstart", function() {
+  let intervalId = setInterval(function() {
+    sprite.style.left = sprite.offsetLeft - 2 + "px";
+  }, 16);
+
+  rightButton.addEventListener("touchend", function() {
+    clearInterval(intervalId);
+  });
+});
+
+jumpButton.addEventListener("touchstart", function() {
+  jumpIntervalId = setInterval(function() {
+    sprite.style.top = sprite.offsetTop - 3 + "px";
+  }, 16);
+});
+
+jumpButton.addEventListener("touchend", function() {
+  clearInterval(jumpIntervalId);
+});
+
+downButton.addEventListener("touchstart", function() {
+  downIntervalId = setInterval(function() {
+    sprite.style.top = sprite.offsetTop + 3 + "px";
+  }, 16);
+});
+
+downButton.addEventListener("touchend", function() {
+  clearInterval(downIntervalId);
+});
+
+function detectCollision(sprite, emoji) {
+  var spriteRect = sprite.getBoundingClientRect();
+  var emojiRect = emoji.getBoundingClientRect();
+  return !(
+    spriteRect.bottom < emojiRect.top ||
+    spriteRect.top > emojiRect.bottom ||
+    spriteRect.right < emojiRect.left ||
+    spriteRect.left > emojiRect.right
+  );
+}
+
+    
+      
+      const button = document.getElementById('sb');
+      const lbBtn = document.getElementById("lb");
+    const rbBtn = document.getElementById("rb");
+    const jbBtn = document.getElementById("jb");
+    const dbBtn = document.getElementById("db");
+    
+    
+    const audio = new Audio('https://od.lk/d/NTVfMjQ5NjE0MjNf/Wintergatan_-_Marble_Machine_%28music_instrument_using_2000_marbles%29%28256k%29.mp3');
+    const himAudio = new Audio("https://od.lk/s/NTVfMjQ5NjE0NDZf/mixkit-cartoon-quick-splat-2890.wav");
+    const sheAudio = new Audio("https://od.lk/s/NTVfMjQ5NjE0MzBf/mixkit-video-game-spin-jump-2648.wav");
+    const themAudio = new Audio("https://od.lk/s/NTVfMjQ5NjE0MzFf/mixkit-cartoon-falling-whistle-395.wav");
+    let isPlaying = false;
+    
+    
+
+button.addEventListener('click', () => {
+  if (isPlaying) {
+    audio.pause();
+    audio.currentTime = 0;
+    isPlaying = false;
+  } else {
+    audio.play();
+    isPlaying = true;
+  }
+});
+
+audio.addEventListener('ended', () => {
+  audio.currentTime = 0;
+  isPlaying = true;
+});
+
+    
+    lbBtn.addEventListener("click", () => {
+      himAudio.play();
+    });
+    
+    rbBtn.addEventListener("click", () => {
+      himAudio.play();
+    });
+    
+    jbBtn.addEventListener("click", () => {
+      sheAudio.play();
+    });
+    
+    dbBtn.addEventListener("click", () => {
+      themAudio.play();
+    });
+      
+    
+    
+    
+    
+      
+      </script>
+
+
+
+ 
+</body>
+</html>
