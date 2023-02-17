@@ -1141,23 +1141,26 @@ body{
     const jumpButton = document.getElementById("jb");
     const downButton = document.getElementById("db");
     
-    leftButton.addEventListener("click", function() {
-        let intervalId = setInterval(function() {
-          sprite.style.left = sprite.offsetLeft + 2 + "px";
-        }, 16);
-    
-        
-      });
-      
-    
-      rightButton.addEventListener("click", function() {
-        let intervalId = setInterval(function() {
-          sprite.style.left = sprite.offsetLeft - 2 + "px";
-        }, 16);
-        
-        
-        
-      });
+    leftButton.addEventListener("touchstart", function() {
+    let intervalId = setInterval(function() {
+        sprite.style.left = sprite.offsetLeft + 2 + "px";
+    }, 16);
+
+    leftButton.addEventListener("touchend", function() {
+        clearInterval(intervalId);
+    });
+});
+
+rightButton.addEventListener("touchstart", function() {
+    let intervalId = setInterval(function() {
+        sprite.style.left = sprite.offsetLeft - 2 + "px";
+    }, 16);
+
+    rightButton.addEventListener("touchend", function() {
+        clearInterval(intervalId);
+    });
+});
+
       
     
     jumpButton.addEventListener("click", function() {
