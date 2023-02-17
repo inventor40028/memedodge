@@ -1135,55 +1135,64 @@ body{
     
     
     
-    const sprite = document.getElementById("sprite");
-    const leftButton = document.getElementById("lb");
-    const rightButton = document.getElementById("rb");
-    const jumpButton = document.getElementById("jb");
-    const downButton = document.getElementById("db");
-    
-    leftButton.addEventListener("touchstart", function() {
-    let intervalId = setInterval(function() {
-        sprite.style.left = sprite.offsetLeft + 2 + "px";
-    }, 16);
+   const sprite = document.getElementById("sprite");
+const leftButton = document.getElementById("lb");
+const rightButton = document.getElementById("rb");
+const jumpButton = document.getElementById("jb");
+const downButton = document.getElementById("db");
 
-    leftButton.addEventListener("touchend", function() {
-        clearInterval(intervalId);
-    });
+let jumpIntervalId, downIntervalId;
+
+leftButton.addEventListener("touchstart", function() {
+  let intervalId = setInterval(function() {
+    sprite.style.left = sprite.offsetLeft + 2 + "px";
+  }, 16);
+
+  leftButton.addEventListener("touchend", function() {
+    clearInterval(intervalId);
+  });
 });
 
 rightButton.addEventListener("touchstart", function() {
-    let intervalId = setInterval(function() {
-        sprite.style.left = sprite.offsetLeft - 2 + "px";
-    }, 16);
+  let intervalId = setInterval(function() {
+    sprite.style.left = sprite.offsetLeft - 2 + "px";
+  }, 16);
 
-    rightButton.addEventListener("touchend", function() {
-        clearInterval(intervalId);
-    });
+  rightButton.addEventListener("touchend", function() {
+    clearInterval(intervalId);
+  });
 });
 
-      
-    
-    jumpButton.addEventListener("click", function() {
-        sprite.style.top = sprite.offsetTop - 5 + "px";
-      });
-    
-      downButton.addEventListener("click", function() {
-        sprite.style.top = sprite.offsetTop + 5 + "px";
-      });
-      
-    
-    
-    
-      function detectCollision(sprite, emoji) {
-        var spriteRect = sprite.getBoundingClientRect();
-        var emojiRect = emoji.getBoundingClientRect();
-        return !(
-          spriteRect.bottom < emojiRect.top ||
-          spriteRect.top > emojiRect.bottom ||
-          spriteRect.right < emojiRect.left ||
-          spriteRect.left > emojiRect.right
-        );
-      }
+jumpButton.addEventListener("touchstart", function() {
+  jumpIntervalId = setInterval(function() {
+    sprite.style.top = sprite.offsetTop - 3 + "px";
+  }, 16);
+});
+
+jumpButton.addEventListener("touchend", function() {
+  clearInterval(jumpIntervalId);
+});
+
+downButton.addEventListener("touchstart", function() {
+  downIntervalId = setInterval(function() {
+    sprite.style.top = sprite.offsetTop + 3 + "px";
+  }, 16);
+});
+
+downButton.addEventListener("touchend", function() {
+  clearInterval(downIntervalId);
+});
+
+function detectCollision(sprite, emoji) {
+  var spriteRect = sprite.getBoundingClientRect();
+  var emojiRect = emoji.getBoundingClientRect();
+  return !(
+    spriteRect.bottom < emojiRect.top ||
+    spriteRect.top > emojiRect.bottom ||
+    spriteRect.right < emojiRect.left ||
+    spriteRect.left > emojiRect.right
+  );
+}
     
       
       const button = document.getElementById('sb');
